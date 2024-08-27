@@ -17,6 +17,8 @@ app.use(express.json());
 app.use("/api/students", studentRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-app.listen(3500, () => {
-  console.log("Server is running on port 3500");
+const PORT = process.env.PORT || 3500;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
