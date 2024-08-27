@@ -1,0 +1,43 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dbe9f4, #d2f8d1);
+  padding: 2rem;
+}
+
+.app-header {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(90deg, #2563eb);
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.app-header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  border: 2px solid #2a5298;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.upload-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
