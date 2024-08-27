@@ -18,7 +18,6 @@ const uploadMarks = async (req, res) => {
     const data = xlsx.utils.sheet_to_json(sheet);
 
     for (const entry of data) {
-      // Dynamically create subjects array
       const subjects = [];
       for (let i = 1; i <= 10; i++) {
         // Adjust the number of subjects as needed
@@ -97,7 +96,7 @@ const generateReportCard = async (req, res) => {
       doc.moveTo(50, 100).lineTo(550, 100).stroke();
       doc.moveDown();
 
-      // Student details
+      
       doc.fontSize(18).text("Student Report Card", { align: "center" });
       doc.moveDown();
       doc.fontSize(12).text(`Name: ${student.name}`, { align: "left" });

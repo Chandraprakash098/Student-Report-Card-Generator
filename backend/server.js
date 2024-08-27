@@ -1,7 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const path = require("path"); // Import path
-const cors = require("cors"); // Import cors
+const path = require("path");
+const cors = require("cors"); 
 const connectDB = require("./config/db");
 const studentRoutes = require("./routes/studentRoutes");
 
@@ -10,7 +10,7 @@ connectDB();
 
 const app = express();
 
-// Use cors to allow cross-origin requests
+
 app.use(cors());
 app.use(express.json());
 

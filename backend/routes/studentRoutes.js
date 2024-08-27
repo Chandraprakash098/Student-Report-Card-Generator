@@ -6,7 +6,7 @@ const {
 } = require("../controllers/studentController");
 
 const router = express.Router();
-const upload = multer({ dest: "uploads/" }); // Ensure 'uploads/' directory exists
+const upload = multer({ dest: "uploads/" }); 
 
 router.post("/upload-marks", upload.single("file"), uploadMarks);
 router.get("/generate-report-cards", generateReportCard);
