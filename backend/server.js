@@ -17,6 +17,14 @@ app.use(express.json());
 app.use("/api/students", studentRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+// Catch-all handler to serve the React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+});
+
 const PORT = process.env.PORT || 3500;
 
 app.listen(PORT, () => {
